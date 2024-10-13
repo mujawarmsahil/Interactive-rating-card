@@ -1,0 +1,224 @@
+/* @import url("https://fonts.google.com/specimen/Overpass"); */
+
+:root
+{
+    --white-color:hsl(0, 0%, 100%);
+    --light-grey:hsl(217, 12%, 63%);
+    --dark-blue:hsl(213, 19%, 18%);
+    --very-dark-blue:hsl(216, 12%, 8%);
+    --paragraph-font:15px;
+    --light-font-weight:400;
+    --bold-font-weight:700;
+    --orange-color:hsl(25, 97%, 53%);
+}
+
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    /* font-family:; */
+}
+
+body 
+{
+    width: 100%;
+    height: 100vh;
+}
+
+.container
+{
+    width:100%;
+    height:100%;
+    background-color:var(--very-dark-blue);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    gap:20px;
+}
+
+#rating
+{
+    width:20.125rem;
+    height:20.125rem;
+    border-radius:20px;
+    background-color:var(--dark-blue);
+    margin:0 auto;
+    padding:30px;
+    -webkit-border-radius:20px;
+    -moz-border-radius:20px;
+    -ms-border-radius:20px;
+    -o-border-radius:20px;
+}
+
+.rating-card
+{
+    transition:0.3s all ;
+    -webkit-transition:0.3s all ;
+    -moz-transition:0.3s all ;
+    -ms-transition:0.3s all ;
+    -o-transition:0.3s all ;
+}
+
+
+.rating-card header span
+{
+    padding:10px;
+    border-radius:50%;
+    background-color:rgba(255, 255, 255, 0.199);
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
+}
+
+.rating-card header span img 
+{
+    object-fit:contain;
+}
+
+#textArea
+{
+    margin: 20px 0 10px;
+}
+
+#textArea h2
+{
+    text-align: center;
+    color:var(--white-color);
+    font-weight: var(--bold-font-weight);
+}
+
+#textArea p
+{
+    margin-top:10px;
+    font-weight:var(--light-font-weight);
+    text-align:justify;
+    color:var(--light-grey);
+    font-size:var(--paragraph-font);
+}
+
+.rating-card ul
+{
+    margin:20px auto;
+}
+
+.rating-card ul li 
+{
+    display:inline-block;
+    margin: 0 5px;
+    height:35px;
+    width:35px;
+    cursor: pointer;
+    color:var(--white-color);
+    text-align:center;
+    align-content: center;
+    border-radius:50%;
+    background-color:rgba(255, 255, 255, 0.199);
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
+}
+
+.rating-card ul li:hover
+{
+    background-color: var(--orange-color);
+}
+
+.rating-card ul li:visited
+{
+    background-color: var(--white-color);
+}
+
+.rating-card ul li a 
+{
+    width: 100%;
+    height: 100%;
+    text-decoration:none;
+    color:var(--light-grey);
+    font-weight: var(--bold-font-weight);
+}
+
+.rating-card ul li:hover a
+{
+    color:black;
+}
+
+#btnSubmit
+{
+    width: 100%;
+    background-color:var(--orange-color);
+    padding:10px 0;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    -webkit-border-radius:8px;
+    -moz-border-radius:8px;
+    -ms-border-radius:8px;
+    -o-border-radius:8px;
+    font-weight: var(--bold-font-weight);
+}
+
+.active
+{
+    background-color:var(--white-color) !important;
+    color:black !important;
+}
+
+#btnSubmit:is(:hover , :focus)
+{
+    background-color: var(--white-color);
+}
+
+.thanks-card
+{
+    display: none;
+}
+
+#message
+{
+    color:var(--orange-color);
+    font-size:var(--paragraph-font);
+    background-color:rgba(255, 255, 255, 0.199);
+    border-radius: 10px;
+    padding: 5px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.thanks-card
+{
+    transition: 0.6s all 0.3s;
+    -webkit-transition: 0.6s all 0.3s;
+    -moz-transition: 0.6s all 0.3s;
+    -ms-transition: 0.6s all 0.3s;
+    -o-transition: 0.6s all 0.3s;
+}
+
+.thanks-card header 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:20px;
+}
+
+.thanks-card #textArea
+{
+    margin-top: 20px;
+}
+
+.attribution 
+{ 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a 
+{ 
+    color: hsl(228, 45%, 44%); 
+}
